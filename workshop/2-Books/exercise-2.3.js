@@ -19,7 +19,7 @@ class BookList {
   }
   add = (book) => {
     this.BookList.push(book);
-    if ((this.currentlyReading = null)) {
+    if (this.currentlyReading === null) {
       this.currentlyReading = book;
     }
   };
